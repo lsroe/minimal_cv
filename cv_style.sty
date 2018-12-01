@@ -1,0 +1,53 @@
+\ProvidesPackage{cv_style}
+
+%font
+\usepackage{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc} 
+
+\usepackage[ngerman,english]{babel}
+
+%proper justification
+\usepackage{microtype}
+
+%custom colors
+\usepackage{xcolor}
+\definecolor{light-gray}{gray}{0.30}
+\definecolor{midblue}{RGB}{0,102,204}
+
+%linespacing
+\usepackage[onehalfspacing]{setspace}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black,
+  pdfauthor={liroe},
+  pdftitle={CV}
+}
+
+%margins
+\usepackage[margin = 2cm, left = 2.5cm, top = 2.5cm, bottom = 2.5cm,
+includehead]{geometry}
+
+%number style
+\pagenumbering{Roman}
+
+%proper justification
+\usepackage{ragged2e}
+
+% header and footer
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{midblue}\leaders\hrule height
+    \headrulewidth\hfill}}
+\fancyhf{}
+\pagestyle{fancy}
+\fancyhf{}
+
+
+%provides the general form
+\usepackage{longtable, array}
